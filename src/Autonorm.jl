@@ -4,6 +4,7 @@ using SQLite, DataFrames
 
 
 export getdatabase 
+export chromosomesize
 
 
 """
@@ -53,6 +54,10 @@ julia> db = getdatabase("test.db")
 """
 function getdatabase(s::AbstractString)::SQLite.DB 
     return SQLite.DB(s)
+end 
+
+function chromosomesize(attributes::Int)::Int
+    return ceil(log2(attributes)) * attributes
 end 
 
 end # module Autonorm
