@@ -21,7 +21,8 @@ Connects to a on-memory-database file and returns a SQLite.DB object.
 
 # Examples
 ```julia-repl
-julia> db = getdatabase("test.db")
+julia> db = getdatabase()
+SQLite.DB(":memory:")
 ```
 # References
 
