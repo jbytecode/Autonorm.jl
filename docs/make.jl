@@ -14,3 +14,5 @@ makedocs(
         "Datasets" => "datasets.md",
     ],
 )
+
+deploydocs(repo = "github.com/jbytecode/Autonorm.jl")
